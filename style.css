@@ -1,0 +1,91 @@
+.header {
+    background-color: rgb(245, 204, 129);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+    animation: fromto 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fromto {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 50%;
+    }
+}
+
+.body-part {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: darkturquoise;
+    
+}
+
+.body-part .menu {
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(207, 231, 142);
+    background-color: rgb(236, 128, 128);
+    margin: 10px;
+}
+
+.body-part > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    border: dotted blueviolet;
+    height: 700px;
+}
+
+.footer {
+    background-color: paleturquoise;
+    text-align: right;
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .body-part {
+        width: 50%;
+        background-color: rgb(242, 221, 243)
+    }
+    .header {
+        width: 50%;
+    }
+    .footer {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .body-part {
+        width: 75%;
+        background-color: rgb(89, 123, 236)
+    }
+    .header {
+        width: 75%;
+    }
+    .footer {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .body-part {
+        width: 100%;
+        background-color: turquoise
+    }
+    .header {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+}
